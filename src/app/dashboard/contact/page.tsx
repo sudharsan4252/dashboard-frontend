@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 
-const contact: React.FC = () => {
+const Contact: React.FC = () => {
   const [users, setUsers] = useState([])
   let getData = async () => {
     const dataResp = await fetch(`${process.env.NEXT_PUBLIC_URL}/users`)
@@ -34,4 +34,4 @@ const contact: React.FC = () => {
     </main>
   )
 }
-export default contact;
+export default Contact;

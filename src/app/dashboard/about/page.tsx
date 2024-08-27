@@ -1,10 +1,10 @@
 import React from "react";
 
-const about:React.FC=()=>{
+const About:React.FC=()=>{
 return(
     <main>
         <h1>hello i am from about</h1>
     </main>
 )
 }
-export default about;
+export default About;
