@@ -14,7 +14,8 @@ const Sidebar: React.FC = () => {
     return (
         <div className="flex flex-col w-48 h-screen shadow-2xl">
             <div className="w-full flex text-xl justify-center items-center h-12 bg-zinc-300 border-b-2 border-zinc-700">
-                Dashboard
+                
+                <Link href={"/"}>Dashboard</Link>
             </div>
             <div className="w-full mt-4">
                 {list.map((item) => (
