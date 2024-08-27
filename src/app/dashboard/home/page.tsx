@@ -18,8 +18,7 @@ const Home: React.FC = () => {
   const printdata = async(event:any)=>{
     event.preventDefault();
     console.log(data)
-    let response = await axios.post("http://localhost:3004/users", data)
-    console.log(response);
+    let response = await axios.post(`${process.env.NEXT_PUBLIC_URL}/users`, data)
   }
   return (
     <main className=" flex box-border justify-center items-start mt-24">

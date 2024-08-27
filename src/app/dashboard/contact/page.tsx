@@ -5,9 +5,9 @@ import React, { useEffect, useState } from "react";
 const contact: React.FC = () => {
   const [users, setUsers] = useState([])
   let getData = async () => {
-    const dataResp = await fetch('http://localhost:3004/users')
+    const dataResp = await fetch(`${process.env.NEXT_PUBLIC_URL}/users`)
+    console.log(`${process.env.NEXT_PUBLIC_URL}`)
     const data = await dataResp.json()
-    console.log(data)
     setUsers(data)
   }
   useEffect(() => {
