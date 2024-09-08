@@ -46,7 +46,8 @@ const SearchComponent: React.FC = () => {
 
     useEffect(() => {
         const fetchCountries = async () => {
-            const response = await fetch('http://localhost:3000/country?type=data');
+            // const response = await fetch('http://localhost:3000/country?type=data');
+            const response = await fetch(`${process.env.NEXT_PUBLIC_URL_1}/country?type=data`);
             const data: Country[] = await response.json();
             setCountries(data);
         };
@@ -77,7 +78,7 @@ const SearchComponent: React.FC = () => {
             state,
             city,
         }).toString();
-        const response = await fetch(`http://localhost:3000/search?${query}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_URL_1}/search?${query}`);
         const data: Author[] = await response.json();
         setResults(data);
     };
