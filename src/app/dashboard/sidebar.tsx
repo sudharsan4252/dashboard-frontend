@@ -9,10 +9,10 @@ const Sidebar: React.FC = () => {
         console.log(Selectedele);
     }, [Selectedele]);
 
-    const list: string[] = ['about', 'home', 'contact', 'help'];
+    const list: string[] = ['about', 'home', 'contact', 'help','search'];
 
     return (
-        <div className="flex flex-col w-48 h-screen shadow-2xl">
+        <div className="flex flex-col w-48 h-full shadow-2xl">
             <div className="w-full flex text-xl justify-center items-center h-12 bg-zinc-300 border-b-2 border-zinc-700">
                 
                 <Link href={"/"}>Dashboard</Link>
